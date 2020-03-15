@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33be6a41-6de2-4e11-a42e-bc164f681bd2" name="Default Changelist" comment="" />
+    <list default="true" id="33be6a41-6de2-4e11-a42e-bc164f681bd2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Chapter02-SQL_数据库操作语言DML/01_数据库操作语言DML.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +11,23 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -30,12 +49,17 @@
     </option>
   </component>
   <component name="ProjectId" id="1Z7rLJ0ahKi5Bhjsd3Zb3iPxoyK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -51,6 +75,12 @@
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="false">
@@ -162,8 +192,19 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.17144808" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5fd9e832" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -183,16 +224,68 @@
       <workItem from="1584200918628" duration="320000" />
       <workItem from="1584201270575" duration="36000" />
       <workItem from="1584201318857" duration="87000" />
+      <workItem from="1584202059096" duration="218000" />
+      <workItem from="1584202486285" duration="181000" />
+      <workItem from="1584202723408" duration="311000" />
+      <workItem from="1584203073804" duration="206000" />
+      <workItem from="1584238555232" duration="1574000" />
+      <workItem from="1584240394518" duration="233000" />
+      <workItem from="1584243093894" duration="111000" />
+      <workItem from="1584243431898" duration="51000" />
+      <workItem from="1584243518103" duration="54000" />
+      <workItem from="1584243591519" duration="57000" />
+      <workItem from="1584244983117" duration="38000" />
+      <workItem from="1584246936809" duration="34000" />
+      <workItem from="1584247586355" duration="150000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="270" y="54" key="SettingsEditor" timestamp="1584201397022">
+    <state x="361" y="71" key="#SQL_Dialects" timestamp="1584202126340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584201397022" />
+    <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1584202126340" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584202097164">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1584202097164" />
+    <state width="1212" height="203" key="GridCell.Tab.0.bottom" timestamp="1584247620953">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1212" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584247620953" />
+    <state width="1212" height="203" key="GridCell.Tab.0.center" timestamp="1584247620953">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1212" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584247620953" />
+    <state width="1212" height="203" key="GridCell.Tab.0.left" timestamp="1584247620952">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1212" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584247620952" />
+    <state width="1212" height="203" key="GridCell.Tab.0.right" timestamp="1584247620953">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1212" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584247620953" />
+    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1584239343877">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1584239343877" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1584247732486">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584247732486" />
+    <state x="423" y="179" width="594" height="431" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1584203210137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="423" y="179" width="594" height="431" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1584203210137" />
+    <state x="152" y="117" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1584238904314">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="152" y="117" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.824@0.0.1536.824" timestamp="1584238904314" />
   </component>
 </project>
