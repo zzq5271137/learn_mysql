@@ -1138,151 +1138,112 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="288" parent="5" name="a"/>
-    <table id="289" parent="5" name="b"/>
-    <table id="290" parent="5" name="car"/>
-    <table id="291" parent="5" name="person"/>
-    <table id="292" parent="5" name="student"/>
-    <table id="293" parent="5" name="teacher"/>
-    <table id="294" parent="5" name="teacher_student_rel"/>
-    <column id="295" parent="288" name="name">
+    <table id="288" parent="5" name="dept">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="289" parent="5" name="emp">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="290" parent="5" name="salgrade">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <column id="291" parent="288" name="deptno">
       <Position>1</Position>
-      <DataType>varchar(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="296" parent="288" name="score">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="297" parent="289" name="name">
-      <Position>1</Position>
-      <DataType>varchar(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="298" parent="289" name="score">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="299" parent="290" name="cid">
-      <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
+      <Comment>表示部门编号，由两位数字所组成</Comment>
+      <DataType>bigint(2)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="290" name="cname">
+    <column id="292" parent="288" name="dname">
       <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <Comment>部门名称，最多由14个字符所组成</Comment>
+      <DataType>varchar(14)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="290" name="ccolor">
+    <column id="293" parent="288" name="local">
       <Position>3</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <Comment>部门所在的位置</Comment>
+      <DataType>varchar(13)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="290" name="pid">
+    <key id="294" parent="288" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>deptno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="295" parent="289" name="empno">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="296" parent="289" name="ename">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="297" parent="289" name="job">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="298" parent="289" name="mgr">
       <Position>4</Position>
-      <DataType>bigint(20)|0s</DataType>
+      <Comment>上级的编号</Comment>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="303" parent="290" name="car_person_fk">
-      <ColNames>pid</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="304" parent="290" name="PRIMARY">
+    <column id="299" parent="289" name="hiredate">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="300" parent="289" name="salary">
+      <Position>6</Position>
+      <DataType>decimal(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="289" name="comm">
+      <Position>7</Position>
+      <Comment>绩效/奖金</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="289" name="deptno">
+      <Position>8</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="303" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>cid</ColNames>
+      <ColNames>empno</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="305" parent="290" name="car_person_fk">
-      <ColNames>pid</ColNames>
-      <RefTableName>person</RefTableName>
-      <RefColNames>pid</RefColNames>
-    </foreign-key>
-    <column id="306" parent="291" name="pid">
+    <column id="304" parent="290" name="grade">
       <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
+      <Comment>工资等级</Comment>
+      <DataType>bigint(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="291" name="pname">
+    <column id="305" parent="290" name="lowSalary">
       <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <Comment>此等级的最低工资</Comment>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="308" parent="291" name="PRIMARY">
+    <column id="306" parent="290" name="highSalary">
+      <Position>3</Position>
+      <Comment>此等级的最高工资</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="307" parent="290" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>pid</ColNames>
+      <ColNames>grade</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="309" parent="292" name="sid">
-      <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="310" parent="292" name="sname">
-      <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="311" parent="292" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>sid</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="312" parent="293" name="tid">
-      <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="313" parent="293" name="tname">
-      <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="314" parent="293" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>tid</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="315" parent="294" name="sid">
-      <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="316" parent="294" name="tid">
-      <Position>2</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="317" parent="294" name="teacher_rel">
-      <ColNames>tid</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="318" parent="294" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>sid
-tid</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="319" parent="294" name="student_rel">
-      <ColNames>sid</ColNames>
-      <RefTableName>student</RefTableName>
-      <RefColNames>sid</RefColNames>
-    </foreign-key>
-    <foreign-key id="320" parent="294" name="teacher_rel">
-      <ColNames>tid</ColNames>
-      <RefTableName>teacher</RefTableName>
-      <RefColNames>tid</RefColNames>
-    </foreign-key>
   </database-model>
 </dataSource>
