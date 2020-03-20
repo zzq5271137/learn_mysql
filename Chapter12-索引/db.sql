@@ -53,6 +53,7 @@ delimiter ;
 -- ----------------------------
 -- Function structure for rand_str
 -- ----------------------------
+set global log_bin_trust_function_creators = TRUE;
 DROP FUNCTION IF EXISTS `rand_str`;
 delimiter ;;
 CREATE DEFINER=`root`@`localhost` FUNCTION `rand_str`(len int) RETURNS varchar(255) CHARSET utf8mb4

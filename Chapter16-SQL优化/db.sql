@@ -104,7 +104,7 @@ declare i int default 0;
 
 set autocommit = 0;
 
-repeat 
+repeat
 set i = i + 1;
 insert into testemployee (name,dep_id,age,salary,cus_id) values(rand_str(5),floor(1 + rand()*10),floor(20 + rand()*10),floor(2000 + rand()*10),floor(1 + rand()*10));
 until i = max_num
@@ -118,6 +118,7 @@ delimiter ;
 -- ----------------------------
 -- Function structure for rand_str
 -- ----------------------------
+set global log_bin_trust_function_creators = TRUE;
 DROP FUNCTION IF EXISTS `rand_str`;
 delimiter ;;
 CREATE DEFINER=`root`@`localhost` FUNCTION `rand_str`(n int) RETURNS varchar(255) CHARSET utf8
@@ -128,7 +129,7 @@ DECLARE str VARCHAR(100) DEFAULT 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST
 DECLARE i int DEFAULT 0;
 #生成的结果
 DECLARE res_str varchar(255) default '';
-while i < n do 
+while i < n do
 set  res_str = CONCAT(res_str,substr(str,floor(1+RAND()*52),1));
 set i = i + 1;
 end while;
