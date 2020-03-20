@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33be6a41-6de2-4e11-a42e-bc164f681bd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter06-子查询/01_子查询.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter06-子查询/db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter07-常用函数/01_常用函数.sql" afterDir="false" />
-    </list>
+    <list default="true" id="33be6a41-6de2-4e11-a42e-bc164f681bd2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,17 +208,7 @@
         <serviceView>
           <option name="contentProportion" value="0.17144808" />
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@32b10296" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -260,6 +246,7 @@
       <workItem from="1584343749119" duration="67000" />
       <workItem from="1584365061248" duration="63000" />
       <workItem from="1584365382700" duration="44000" />
+      <workItem from="1584701587462" duration="46000" />
     </task>
     <servers />
   </component>
