@@ -68,4 +68,7 @@
  * 1. 表记录太少
  * 2. 经常增删改的表
  * 3. 如果某个数据列包含许多重复的内容，为它建立索引就没有太大的实际效果
+ *
+ * 详见: https://www.bilibili.com/video/BV1aE41117sk
+ *      https://www.bilibili.com/video/BV1BJ411i7WR
  */
