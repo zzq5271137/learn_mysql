@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33be6a41-6de2-4e11-a42e-bc164f681bd2" name="Default Changelist" comment="" />
+    <list default="true" id="33be6a41-6de2-4e11-a42e-bc164f681bd2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,11 +252,25 @@
       <workItem from="1584701587462" duration="46000" />
       <workItem from="1584716654432" duration="186000" />
       <workItem from="1619886549782" duration="17000" />
+      <workItem from="1619886591381" duration="60000" />
+      <workItem from="1619886666871" duration="17000" />
+      <workItem from="1619887034195" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
