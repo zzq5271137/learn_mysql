@@ -39,9 +39,15 @@ from emp e
                     on e.job = r.job and e.salary = r.salary;
 
 -- 查询有2个以上的直接下属的员工
-select ename
+select empno, ename
 from emp
 where empno in (select mgr from emp group by mgr having count(*) >= 2);
+
+-- 查询有2个以上的直接下属的员工，并显示出每个人的下属数量
+select e.empno, e.ename, h.count
+from emp e
+         inner join (select mgr, count(*) as count from emp group by mgr having count(*) >= 2) h
+                    on e.empno = h.mgr;
 
 -- 查询员工编号为7788的员工名称、工资、部门名称、部门地址
 select e.ename, e.salary, d.dname, d.local
