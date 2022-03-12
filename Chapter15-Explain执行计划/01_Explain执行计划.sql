@@ -64,7 +64,7 @@ where id = (select id from employee where id = (select id from customer where id
 EXPLAIN
 select *
 from department d,
-     (select * from employee group by dep_id) t
+     (select dep_id from employee group by dep_id) t
 where d.id = t.dep_id;
 
 /*
