@@ -151,6 +151,10 @@ select department, group_concat(stu_name), count(*), max(stu_score)
 from student
 group by department;
 
+select department, count(*) as num, group_concat(stu_name, '_', stu_score) as member_score, avg(stu_score) as avg
+from student
+group by department;
+
 /*
  * group by + where
  * where写在group by之前, 是先对数据进行where条件筛选, 再进行分组
