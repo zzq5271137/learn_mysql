@@ -93,7 +93,7 @@ order by dep_id desc, age asc;
  * (分组前必排序)
  */
 explain
-select name, dep_id, age
+select age
 from employee
 where name = '鲁班'
 group by age;
@@ -109,7 +109,7 @@ where dep_id = 1
 order by name;
 
 explain
-select *
+select age, dep_id
 from employee
 where name = ''
 group by age, dep_id;
