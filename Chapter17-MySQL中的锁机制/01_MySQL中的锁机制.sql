@@ -62,4 +62,6 @@
  *        乐观锁的实现方式: (1). 版本号 (2). 时间戳
  *
  * 详见xmind文档;
+ *
+ * 资料：https://www.zhoulujun.net/html/DB/mysql/2019_1014_8173.html
  */
