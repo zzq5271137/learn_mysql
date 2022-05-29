@@ -53,4 +53,5 @@
  * 1. mysql页结构：https://www.modb.pro/db/139052
  * 2. mysql行格式：https://www.modb.pro/db/135390
  * 3. mysql底层：https://www.bilibili.com/video/BV14v411z7M2?p=1
+ * 4. sql解析顺序：https://blog.csdn.net/baidu_20876831/article/details/115323264
  */
