@@ -18,6 +18,14 @@ values ('废物1', 100, 1),
        ('废物3', 100, 1);
 
 /*
+ * 无则插入，有则更新（更新为全量更新，即null值会覆盖已有的值）
+ */
+replace into student (stu_id, stu_name, stu_age, stu_gender)
+values (27, '初初', 18, 0);
+replace into student (stu_id, stu_name)
+values (27, '初初2');
+
+/*
  * 更新数据(没有写where条件, 就会把这一列所有数据都改)
  */
 update student
