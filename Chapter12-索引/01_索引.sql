@@ -24,7 +24,7 @@
  *    一个索引包含多个列;
  *    例如, INDEX MultiIdx(id,name,age)
  * 4. 全文索引
- *    只有在MyISAM引擎上才能使用, 只能在char,varchar,text类型字段上使用全文索引;
+ *    只能在char,varchar,text类型字段上使用全文索引;
  * 5. 空间索引
  *    只有在MyISAM引擎上才能使用, 空间索引是对空间数据类型的字段建立的索引
  *
