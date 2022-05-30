@@ -32,3 +32,19 @@ VALUES ('Alice', 2016, 01, 100),
        ('John', 2017, 01, 150),
        ('John', 2017, 02, 150),
        ('John', 2017, 03, 150);
+
+select a.*,
+       sum(sales) over (partition by year order by month) total
+from (
+         select year, month, sum(sale) as sales
+         from sales
+         group by year, month) a;
+
+select a.*,
+       row_number() over (order by month) rank1,
+       rank() over (order by month)       rank2,
+       dense_rank() over (order by month) rank3
+from (
+         select year, month, sum(sale) as sales
+         from sales
+         group by year, month) a;
