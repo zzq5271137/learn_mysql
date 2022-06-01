@@ -74,5 +74,10 @@
  *      https://baijiahao.baidu.com/s?id=1708771812652657010&wfr=spider&for=pc
  *      https://www.bilibili.com/video/BV14v411z7M2
  *      https://blog.csdn.net/XueyinGuo/article/details/119222878
-*       https://www.cnblogs.com/hld123/p/14150349.html
+ *      https://www.cnblogs.com/hld123/p/14150349.html
+ *      mysql之记录结构：https://www.modb.pro/db/135390
+ *      mysql之数据页结构：https://www.modb.pro/db/139052
+ *      mysql之B+数索引：https://www.modb.pro/db/142657
+ *      mysql之Innodb表空间：https://www.modb.pro/db/144961
+ *      mysql之Innodb存储结构总结：https://www.modb.pro/db/166294
  */

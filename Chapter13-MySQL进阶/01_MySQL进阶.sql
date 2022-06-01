@@ -50,8 +50,11 @@
  * 详情查看xmind文档;
  *
  * 资料：
- * 1. mysql页结构：https://www.modb.pro/db/139052
- * 2. mysql行格式：https://www.modb.pro/db/135390
- * 3. mysql底层：https://www.bilibili.com/video/BV14v411z7M2?p=1
- * 4. sql解析顺序：https://blog.csdn.net/baidu_20876831/article/details/115323264
+ * 1. mysql底层：https://www.bilibili.com/video/BV14v411z7M2?p=1
+ * 2. sql解析顺序：https://blog.csdn.net/baidu_20876831/article/details/115323264
+ * 3. mysql之记录结构：https://www.modb.pro/db/135390
+ * 4. mysql之数据页结构：https://www.modb.pro/db/139052
+ * 5. mysql之B+数索引：https://www.modb.pro/db/142657
+ * 6. mysql之Innodb表空间：https://www.modb.pro/db/144961
+ * 7. mysql之Innodb存储结构总结：https://www.modb.pro/db/166294
  */
